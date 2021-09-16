@@ -28,7 +28,8 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('posts.create');
+
     }
 
     /**
@@ -39,7 +40,22 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'img_path' => 'url'
+        ]);
+
+        $data = $request->all(); 
+
+
+
+        $post = new Post();
+    
+        $post->author = $data['author'];
+        $post->content = $data['content'];
+        $post->img_path = $data['img_path'];
+        $post->save();  
+        
+        return redirect()->route('post.show', $post->id);
     }
 
     /**

@@ -7,15 +7,26 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-@import '~bootstrap-icons/font/bootstrap-icons.css';
+
 
 .posts-container {
-    background-color: #fff;
+    background-color: rgb(199, 197, 197);
 
     table {
         img {
-            width: 150px;
+            width: 300px;
         }
     }
 
+}
+
+
+.form-container{
+    max-width:250px;
+    background-color: antiquewhite;
+    margin:0 auto;
+    padding-top:30px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 20px;
 }
