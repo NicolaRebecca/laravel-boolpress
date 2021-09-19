@@ -7,14 +7,16 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
 
 
 .posts-container {
-    background-color: rgb(199, 197, 197);
+    background-color: rgb(216, 215, 215);
 
     table {
         img {
-            width: 300px;
+            width: 200px;
         }
     }
 
