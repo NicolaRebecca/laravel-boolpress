@@ -24,3 +24,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('posts', 'PostController');
 
 
+Route::get('/home', 'WebAppController@home');
+
+
